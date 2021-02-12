@@ -1,24 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="Stylesheet" href="~/css/home_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>Home</title>
 </head>
-    <body>
-        <div style="margin-left: 30%;" class="wrapper">
-            <div style="font-size: 24px;" class="nav">
-                <a style="text-decoration: none;" href='/'>Home|</a>
-                <a style="text-decoration: none;" href='/projects'>Projects|</a>
-                <a style="text-decoration: none;" href='/contact'>Contact</a>
-            </div>
-            <img class="img" src="~/images/PythonImages.jpg" alt='its not you its me'>
-            <div class='about'>
-                <h4>About Me</h4>
-                <p>HELLO THERE!</p>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul style="margin: 10px 0px 10px 0px; font-size: 26px;" class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                    style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects"> Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact"> Contact Me</a>
+                    </li>
             </div>
         </div>
-    </body>
+    </nav>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="dblock w-100" src="~/images/cool.jpg" alt='its not you its me'>
+                <div style="margin-bottom: 55%;" class="carousel-caption d-none d-md-block">
+                    <h1>Zachary Munson</h1>
+                    <h2>Software Developer</h2>
+                </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
 </html>

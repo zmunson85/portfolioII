@@ -1,33 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="~/css/style.css"/>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
+
 <body>
-    <div style="font-size: 25px; margin-left: 30%;"  class="container">
-        <div class="container">
-        <div class="nav">
-            <a style="text-decoration: none;" href='/'>Home</a>
-            <a style="margin-left:10px; text-decoration: none;" href='/projects'>Projects</a>
-            <a style="text-decoration: none;" href='/contact'>Contacts</a>
-        </div>
-        </div>
-        <div id="heading">
-            <h1>Contact Me!</h1>
-        </div>
-        <div id="body">
-            <div class="row">
-                <form action="/" method="">@* in order to redirect to the home page I had to remove post from quotes in method *@
-                    <p>Name: <input type="text" name="name"></p>
-                    <p>Email: <input type="text" name="email"></p>
-                    <p>Message: <textarea name="message" id="" cols="20" rows="10"></textarea></p>
-                    <input type="submit" value="Submit">
-                </form>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul style="font-size: 26px;" class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                    style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Me</a>
+                    </li>
             </div>
         </div>
-    </div>
+    </nav>
+    <div class="container-lg">
+        <h1>Contact Me Here!</h1>
+        <div class="col">
+            <p>Leave Your Full Name</p>
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col">
+            <form action="/" method="">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+        <br>
+        <div class="col">
+            <p>Drop Your Email Here</p>
+            <input type="email" class="form-control" placeholder="Enter Email Address" aria-label="Email">
+        </div>
+        <br>
+        <p>Leave a message here</p>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <br>
+            <label for="floatingTextarea">Comments</label>
+            <input type="submit" value="Submit">
+            </form>
+        </div>
 </body>
+
 </html>
