@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="~/css/style.css"/>
+</head>
+<body>
+    <div style="font-size: 25px; margin-left: 30%;"  class="container">
+        <div class="container">
+        <div class="nav">
+            <a style="text-decoration: none;" href='/'>Home</a>
+            <a style="margin-left:10px; text-decoration: none;" href='/projects'>Projects</a>
+            <a style="text-decoration: none;" href='/contact'>Contacts</a>
+        </div>
+        </div>
+        <div id="heading">
+            <h1>Contact Me!</h1>
+        </div>
+        <div id="body">
+            <div class="row">
+                <form action="/" method="">@* in order to redirect to the home page I had to remove post from quotes in method *@
+                    <p>Name: <input type="text" name="name"></p>
+                    <p>Email: <input type="text" name="email"></p>
+                    <p>Message: <textarea name="message" id="" cols="20" rows="10"></textarea></p>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
