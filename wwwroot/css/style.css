@@ -1,19 +1,27 @@
 *{
     height: auto;
     width: auto;
-
-
 }
 
 .container{
     font-size: 25px;
+    
 }
-
+#navbar{
+    color: red;
+}
 .img{
     width: 20%;
 }
 
 nav{
-    border-bottom: 1px solid blue;
+    border-bottom: 4px solid blue;
     justify-content: center;
+}
+
+.card{
+    margin-top: 30%;
+}
+.container-lg{
+    width: 200px;
 }
